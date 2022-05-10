@@ -1,5 +1,7 @@
 class IO::Socket::INET {
-  
+
+  method is_io_socket : void () { }
+
   has handle : int;
   
   native static method new : IO::Socket::INET ($host : string, $port : int);
