@@ -1,12 +1,12 @@
-class TestCase::IO::Socket {
-  use IO::Socket;
+class TestCase::IO::Socket::INET {
+  use IO::Socket::INET;
 
   static method basic : int () {
 
     # Socket
     my $host = "google.com";
     my $port = 80;
-    my $socket = IO::Socket->new($host, $port);
+    my $socket = IO::Socket::INET->new($host, $port);
     
     my $write_buffer = "GET / HTTP/1.0\r\n\r\n";
     $socket->write($write_buffer, length $write_buffer);
@@ -36,7 +36,7 @@ class TestCase::IO::Socket {
     # Socket
     my $host = "google.com";
     my $port = 80;
-    my $socket = IO::Socket->new($host, $port);
+    my $socket = IO::Socket::INET->new($host, $port);
     
     my $write_buffer = "GET / HTTP/1.0\r\n\r\n";
     $socket->write($write_buffer, length $write_buffer);
@@ -64,7 +64,7 @@ class TestCase::IO::Socket {
     # Socket
     my $host = "google.com";
     my $port = 80;
-    my $socket = IO::Socket->new($host, $port);
+    my $socket = IO::Socket::INET->new($host, $port);
     
     my $fileno = $socket->fileno;
     

@@ -19,10 +19,10 @@ sub MY::postamble {
   my $make_rule = "";
   
   # Native compile make rule
-  $make_rule .= SPVM::Builder::Util::API::create_make_rule_native("IO::Socket");
+  $make_rule .= SPVM::Builder::Util::API::create_make_rule_native("IO::Socket::INET");
 
   # Native compile make rule
-  $make_rule .= SPVM::Builder::Util::API::create_make_rule_precompile("IO::Socket");
+  $make_rule .= SPVM::Builder::Util::API::create_make_rule_precompile("IO::Socket::INET");
   
   return $make_rule;
 }

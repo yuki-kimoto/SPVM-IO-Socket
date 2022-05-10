@@ -1,10 +1,10 @@
 Changes
-lib/SPVM/IO/Socket.c
-lib/SPVM/IO/Socket.config
-lib/SPVM/IO/Socket.pm
-lib/SPVM/IO/Socket.spvm
+lib/SPVM/IO/Socket/INET.c
+lib/SPVM/IO/Socket/INET.config
+lib/SPVM/IO/Socket/INET.pm
+lib/SPVM/IO/Socket/INET.spvm
 Makefile.PL
-MANIFEST
+MANIFEST			This list of files
 README
 t/lib/SPVM/TestCase/IO/Socket.spvm
 t/SPVM-IO-Socket.t

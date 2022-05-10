@@ -6,7 +6,7 @@ our $VERSION = '0.01';
 
 =head1 NAME
 
-SPVM::IO::Socket - Socket
+SPVM::IO::Socket - Interface of Socket
 
 =head1 SYNOPSYS
   
